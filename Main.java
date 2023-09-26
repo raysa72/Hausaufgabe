@@ -1,31 +1,48 @@
-package Package3;
+package Package1;
 
 import java.util.Random;
 
 public class Main
 {
-    public static void main(String[]args) {
-        // Напишите программу, которая получает от пользователя два целых числа
-        // и затем вычисляет сумму (сложение), разницу (вычитание),
-        // произведение (умножение) и частное (деление) введённых чисел.
-        // Результат вычислений выведите в консоль.
+    public static void main(String[]args)
 
-        int myArg1 = Integer.parseInt(args[0]);
-        int myArg2 = Integer.parseInt(args[1]);
-        //myStr = String.valueOf("Raisa ist die Beste");
-        double result;
+        {
+            // Напишите программу, в которой объявите переменные бцех примитивных типов.
+            // Значение для каждой переменной сгенерируйте с помощью класса Random .
+            // При необходимости используйте приведение типов. Полученные значения
+            // выведите в консоль.
+            // В этой же программе создайте переменную типа String.Сгенерируйте значение для
+            // строки. При необходимости используйте метод String.valueOf().Ограниченийй на
+            // длину строки и содержимое нет.Полученное значение выведите в консоль.
 
-        result = myArg1 + myArg2;
-        System.out.println("" + myArg1 + "плюс" + myArg2 + "равно" + (int) result);
+            char a = 'G';
+            Random myRand = new Random();
+            int myInt = myRand.nextInt();
+            byte myByte = 4;   // -128 -127
+            myByte = (byte)myRand.nextInt();
+            short myShort = 56;
+            myShort = (short) myRand.nextInt();
+            float myFloat = 4.7333436f;
+            myFloat = myRand.nextFloat();
+            double myDouble = 4.355453532;
+            myDouble = myRand.nextDouble();
+            long myLong = 12121L;
+            myLong = myRand.nextLong();
+            boolean b = true;
+            b = myRand.nextBoolean();
+            String myStr = "Raissa ist die Beste!";
+            //myStr = String.valueOf("Raisa ist die Beste");
 
-        result = myArg1 - myArg2;
-        System.out.println("От уменьшаемого " + myArg1 + " отнимаем вычитаемое " + myArg2 + " получаем разность " + (int) result);
-        if (myArg2 == 0) {
-            System.out.println("Dividieren auf 0 ist nicht zulässig");
-        } else {
-            result = myArg1 / myArg2;
-            System.out.println("Dividieren von " + myArg1 + " und " + myArg2 + " ist " + result);
+            System.out.println(myInt);
+            System.out.println(a);
+            System.out.println(myByte);
+            System.out.println(myShort);
+            System.out.println(myFloat);
+            System.out.println(myDouble);
+            System.out.println(myLong);
+            System.out.println(b);
+            System.out.println(myStr);
 
         }
     }
-}
+
