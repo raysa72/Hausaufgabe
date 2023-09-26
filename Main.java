@@ -1,18 +1,31 @@
-package Package2;
+package Package3;
 
-import java.util.Scanner;
+import java.util.Random;
 
 public class Main
-     {
-         public static void main(String[] args) {
-             Scanner sc = new Scanner(System.in);
-             System.out.println(" Введите свой возрост ");
-             int num1 = sc.nextInt();
+{
+    public static void main(String[]args) {
+        // Напишите программу, которая получает от пользователя два целых числа
+        // и затем вычисляет сумму (сложение), разницу (вычитание),
+        // произведение (умножение) и частное (деление) введённых чисел.
+        // Результат вычислений выведите в консоль.
 
-             System.out.println(" Введите свой вес");
-             int num2 = sc.nextInt();
+        int myArg1 = Integer.parseInt(args[0]);
+        int myArg2 = Integer.parseInt(args[1]);
+        //myStr = String.valueOf("Raisa ist die Beste");
+        double result;
 
-             String result = " Уважаемая(ый) Госпожа(дин) , в свои " + num1 + " лет Вы для нас дороги как " + num2 +  " килограмм Золота! ";
-             System.out.println(result);
-         }
+        result = myArg1 + myArg2;
+        System.out.println("" + myArg1 + "плюс" + myArg2 + "равно" + (int) result);
+
+        result = myArg1 - myArg2;
+        System.out.println("От уменьшаемого " + myArg1 + " отнимаем вычитаемое " + myArg2 + " получаем разность " + (int) result);
+        if (myArg2 == 0) {
+            System.out.println("Dividieren auf 0 ist nicht zulässig");
+        } else {
+            result = myArg1 / myArg2;
+            System.out.println("Dividieren von " + myArg1 + " und " + myArg2 + " ist " + result);
+
+        }
+    }
 }
