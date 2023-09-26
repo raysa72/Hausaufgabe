@@ -1,31 +1,45 @@
-package Package3;
+package Package4;
 
-import java.util.Random;
+import java.util.Scanner ;
+public class Main {
+    public static void main(String[] args) {
 
-public class Main
-{
-    public static void main(String[]args) {
-        // Напишите программу, которая получает от пользователя два целых числа
-        // и затем вычисляет сумму (сложение), разницу (вычитание),
-        // произведение (умножение) и частное (деление) введённых чисел.
-        // Результат вычислений выведите в консоль.
+        Scanner scan = new Scanner(System.in);
 
-        int myArg1 = Integer.parseInt(args[0]);
-        int myArg2 = Integer.parseInt(args[1]);
-        //myStr = String.valueOf("Raisa ist die Beste");
-        double result;
+        //short num1 = 30 ; short num2 = 10 ;
 
-        result = myArg1 + myArg2;
-        System.out.println("" + myArg1 + "плюс" + myArg2 + "равно" + (int) result);
 
-        result = myArg1 - myArg2;
-        System.out.println("От уменьшаемого " + myArg1 + " отнимаем вычитаемое " + myArg2 + " получаем разность " + (int) result);
-        if (myArg2 == 0) {
-            System.out.println("Dividieren auf 0 ist nicht zulässig");
-        } else {
-            result = myArg1 / myArg2;
-            System.out.println("Dividieren von " + myArg1 + " und " + myArg2 + " ist " + result);
+        /*int res1 = num1 + num2 ;
+        int res2  = num1 - num2 ;
+        int res3  = num1 * num2 ;
+        int res4 = num1 / num2 ;
+        System.out.println(" Результат :" + res1);
+        System.out.println(" Результат :" + res2 );
+        System.out.println(" Результат :" + res3 );
+        System.out.println(" Результат :" + res4 );*/
 
-        }
+
+        System.out.println("Введите первое число");
+        float num1 = scan.nextFloat();
+
+        System.out.println("Введите второе число");
+        float num2 = scan.nextFloat();
+
+        float res1 = num1 + num2 ;
+        float res2 = num1 - num2 ;
+        float res3 = num1 * num2 ;
+        float res4 = num1 / num2 ;
+        float res5 = num1 % num2 ;
+
+
+
+        //System.out.println("Результат : + res1");
+        System.out.println(  res1 + "/n" + res2 + "/n" +res3 + "/n" +res4 + "/n" + res5 + "/n");
+        //System.out.println("Результат  : - res2");
+        //System.out.println("Результат  : *  res3");
+        //System.out.println("Результат  : /  res4");
+        //System.out.println("Результат  : %  res5");
+
+
     }
 }
