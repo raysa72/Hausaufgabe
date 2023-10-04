@@ -1,0 +1,15 @@
+h1 { 
+    color: darkslateblue;
+
+}
+
+h2 {
+    color: orange;
+}
+
+p {
+    background-color: pink;
+    border-radius: 20px;
+    padding: 21px;
+    color: black;
+}
